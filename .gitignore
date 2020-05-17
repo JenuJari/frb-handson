@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/.firebase
+/functions/node_modules
+database-debug.log
+functions/fir-rnhandson-firebase-admin-key.json
+functions/firebase-debug.log
+firebase.client.config.json
