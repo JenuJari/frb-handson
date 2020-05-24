@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "prettier.printWidth": 120,
+    "prettier.bracketSpacing": true,
+    "prettier.singleQuote": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.semi": true,
+    "prettier.tabWidth": 2,
+    "prettier.endOfLine": "crlf",
+    "prettier.jsxBracketSameLine": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    },
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.autoIndent": "full",
+    "editor.renderIndentGuides": true,
+    "editor.detectIndentation": false
+  }
+}

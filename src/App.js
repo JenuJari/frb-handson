@@ -1,27 +1,20 @@
-import React from 'react';
-import SampleApp from "./SamplesApp";
-import InsideLayoutOne from './common/hoc/InsideLayoutOne';
-
-window.__appInitGlobals = () => {
-  window.$ = require("jquery");
-  require("popper.js");
-  require("bootstrap/dist/js/bootstrap.bundle.min");
-};
+import React from "react";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import AppRouter from "./routes";
 
 class App extends React.Component {
-  state = {
-    name: "Jenish"
-  }
+  // state = {
+  //   name: "Jenish"
+  // }
 
-  componentDidMount() {
-    window.__appInitGlobals();
-  }
+  componentDidMount() { }
 
   render() {
     return (
-      <InsideLayoutOne>
-        <SampleApp name={this.state.name} />
-      </InsideLayoutOne>
+      <Provider store={store}>
+        <AppRouter />
+      </Provider>
     );
   }
 }
